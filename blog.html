@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Old Windows World</title>
+    <link rel="shortcut icon" href="img/winlogo.ico" type="image/x-icon">
+    <meta charset="utf-8" />
+    <link href="normalize.css" rel="stylesheet">
+    <style>
+        header {
+            text-align: center;
+            background-size: cover;
+            background: url("img/background.png");
+            color: white;
+        }
+
+        ul {
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        li {
+            display: inline;
+            padding: 0px 10px 0px 10px;
+        }
+
+        a {
+            color: white;
+        }
+
+        h1 {
+            font-size: 70px;
+        }
+
+        img {
+            margin: 40px 0px 0px 0px;
+        }
+
+        article {
+            max-width: 500px;
+            padding: 20px;
+            margin: 0 auto;
+        }
+
+        @media (max-width: 500px) {
+            h1 {
+                font-size: 36px;
+            }
+
+            li {
+                display: block;
+                padding: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="img/winlogo.png">
+        <h1>Old Windows World</h1>
+        <ul>
+            <li><a href="blog.html">О сайте</a></li>
+            <li><a href="blog 2.html">Старые сборки</a></li>
+            <li><a href="blog 3.html">Худшие сборки</a></li>
+        </ul>
+    </header>
+    <article>
+        <h2>Это сайт энтузиаста!</h2>
+        <p>Сайт сделан для коллекционеров старых операционных систем. Все копии Windows не нарушают Лицензионное соглашение Windows, поскольку в них нет ключа.</p>
+        <button>понятно</button>
+    </article>
+    <script>
+        "use strict";
+        let but = document.querySelectorAll("button");
+        for(let elem of but) {
+            elem.onclick = function () {
+                alert("спасибо за понимание!");
+            }
+        }
+    </script>
+</body>
+</html>
